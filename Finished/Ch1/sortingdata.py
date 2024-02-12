@@ -17,9 +17,9 @@ sorted_dataset = sorted(dataset, key=lambda d: d['snow'], reverse=True)
 pprint.pp(sorted_dataset)
 
 # # method 2: use the sort() function that every list has to sort in-place
-dataset.sort(key=lambda d: d['snow'], reverse=False)
-pprint.pp(dataset)
+#dataset.sort(key=lambda d: d['snow'], reverse=False)
+#pprint.pp(dataset)
 
 # Sort on multiple fields: first by snowfall, then by average wind speed
-sorted_dataset = sorted(dataset, key=lambda d: (d['snow'], d['awnd']))
-pprint.pp(sorted_dataset)
+#sorted_dataset = sorted(dataset, key=lambda d: (d['snow'], d['awnd']))
+#pprint.pp(sorted_dataset)

@@ -33,3 +33,8 @@ print(f"The coldest day was: {coldday['date']} at {coldday['tmin']} degrees Fahr
 # better use list comprehension
 snowdays = [bla for bla in weatherdata if bla['snow'] > 0]
 print(f"Snow fell on {len(snowdays)} days.")
+
+# Should we believe this?
+# Please show the affected records as well
+
+pprint.pp(snowdays)

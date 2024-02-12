@@ -11,14 +11,32 @@ with open("../../sample-weather-history.json", "r") as weatherfile:
 
 # TODO: make sure the data loaded correctly by printing the length of the dataset
 
-print('The number of data records in the dataset is: ' + str(len(weatherdata)))
+#print('The number of data records in the dataset is: ' + str(len(weatherdata)))
       
 
 # TODO: let's also take a look at the first item in the data
 
-pprint.pp(weatherdata[0])
+#pprint.pp(weatherdata[0])
 
 # TODO: How many days of data do we have for each year?
+
+# initialize a dictionary to catch the sets
+years = {}
+
+
+for i in weatherdata:
+    # define a key for every element
+    key = i['date'][0:4]
+    # check, if the key is already contained in the dictionary
+    if key in years:
+        years[key] += 1
+    else:
+        years[key] = 1
+
+# print the dictionary
+pprint.pp(years, width = 5)
+
+
 
 
 

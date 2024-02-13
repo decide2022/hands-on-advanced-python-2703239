@@ -28,3 +28,7 @@ def day_rank(acc, elem):
 
 result = reduce(day_rank, weatherdata)
 print(f"{result['date']} with data: {result['tmax']}, {result['prcp']}, {result['awnd']}")
+
+# check the execution time of the script and print it
+import time
+print(f"Script execution time: {time.process_time()} seconds")
